@@ -37,9 +37,6 @@ na API.
 
 -> Ele devera criar colunas com as informações que estão faltando.
 
--> O sistema deverá criar uma pasta que irá conter todas as planilhas
-atualizadas.
-
 -> A cada execução do sistema, ele devera criar um arquivo txt com uma
 lista com os cnpjs nao encontrados.
 
@@ -59,12 +56,18 @@ consultas em tempo real (busca em outras fontes até onde entendi).
 -> 1: Crie 2 pastas em seu gerenciador de arquivos: uma para planilhas que contém os CNPJs e outra para salvar as planilhas que foram atualizadas
 com as informações encontradas
 
--> 2: Cole o caminho da pasta que contém as planilhas que SERÃO atualizadas
-no campo de entrada de pastas que contém planilhas
+-> 2: Cole o caminho da pasta que contém as planilhas que SERÃO atualizadas na variável "caminho_planilhas_cnpj".
 
 -> 3: Cole o caminho da pasta que ira conter as planilhas ATUALIZADAS com
-as informações no campo de entrada que contém a pasta de planilhas atualizadas.
+as informações na variável "caminho_planilhas_atualizadas".
 
+-> 4: Execute as demais células do sistema.
 
+                        Possiveis status de requisições
 
+404: Dado não encontrado na consulta
+
+429: Limite de requisições por minuto atingido
+
+200: Ok! Requisição realizada com sucesso (dados encontrados)
 
